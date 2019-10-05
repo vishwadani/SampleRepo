@@ -1,6 +1,6 @@
 import java.util.HashMap;
 import java.util.Iterator;
-final class ImmutableClass{
+final class ImmutableStudent{
     private final int mId;
     private final String mName;
     private final HashMap<String,String> mStdMap;
@@ -22,7 +22,7 @@ final class ImmutableClass{
 	 * @param name
 	 * @param hm
 	 */
-//    public ImmutableClass(int id,String name,HashMap<String,String>hm){
+//    public ImmutableStudent(int id,String name,HashMap<String,String>hm){
 //        System.out.println("Performing Deep Copy for Object initialization");
 //        this.mId=id;
 //        this.mName=name;
@@ -42,7 +42,7 @@ final class ImmutableClass{
  * @param hm
  */
 
-     public ImmutableClass(int i, String n, HashMap<String,String> hm){
+     public ImmutableStudent(int i, String n, HashMap<String,String> hm){
      System.out.println("Performing Shallow Copy for Object initialization");
      this.mId=i;
      this.mName=n;
@@ -58,7 +58,7 @@ final class ImmutableClass{
 
         int i=10;
 
-        ImmutableClass ce = new ImmutableClass(i,s,h1);
+        ImmutableStudent ce = new ImmutableStudent(i,s,h1);
 
         //Lets see whether its copy by field or reference
         System.out.println(s==ce.getName());
